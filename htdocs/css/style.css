@@ -111,62 +111,6 @@ Chat Title
   height: auto;
 }
 
-@font-face {
-  font-family: myFirstFont;
-  src: url(fonts/gordita_medium.woff);
-}
-.button1 {
-  background-color: black; 
-  color: black; 
-  border: 2px solid #e35f21;
-}
-
-.button1:hover {
-	border: 2px solid #e35f21;
-  background-color: black;
-  color: #e35f21;
-}
-.button {
-  font-family: myFirstFont;
-  background-color:#e35f21;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-.email{
-font-family: Montserrat;
-    font-size: 15px;
-    color: #555555;
-    line-height: 1.2;
-    display: block;
-    width: 100%;
-    height: 45px;
-    background: transparent;
-    padding: 0 5px;
-}
-h1{
-color:white;
-
-}
-body{
-	background-color:#e35f21;
-	text-align:center;
-	
-}
-.boxx{
-	margin: auto;
-	border-radius:15px;
-    padding: 77px 55px 77px 55px;
-background: #000;
-width:390px;
-}
 
 /*--------------------
 Messages
@@ -352,6 +296,27 @@ Message Box
 }
 .message-box textarea:focus:-webkit-placeholder {
   color: transparent;
+}
+.message-box .message-exchange{
+  position: absolute;
+  z-index: 1;
+  top: 9px;
+  right: 75px;
+  color: #fff;
+  border: none;
+  background: green;
+  font-size: 14px;
+  text-decoration-line: none;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 6px 10px;
+  border-radius: 10px;
+  outline: none !important;
+  -webkit-transition: background .2s ease;
+  transition: background .2s ease;
+}
+.message-box .message-exchange:hover {
+  background:#093802;
 }
 .message-box .message-submit {
   position: absolute;
